@@ -4,17 +4,14 @@ Project template for pico board. It uses picoprobe and openocd for debugging.
 
 ### Getting started
 `cd pico-sdk`
+
 `git submodule add https://github.com/raspberrypi/pico-sdk.git`
+
 `git submodule update --init`
 
-Follow [pico getting started guide](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf). Appendix A of this 
-pdf contains instructions and wiring to get started with picoprobe.
+Use the build button run of course will have an error.  The `uf2` file will be located in `cmake-build-*/some_project.uf2`
 
-Open this project using CLion. Add an `PICO_SDK_PATH=<path-to-sdk>` to your cmake profile:
-![cmake profile](docs/cmake.png)
-
-Your CLion project is now ready for use. You can build the project and upload the generated file. If you followed the 
-picoprobe guide you can start debugging but, first you need to create an openocd config:
+Take a look at clion section of [Getting Started with Pi Pico](https://pip-assets.raspberrypi.com/categories/610-raspberry-pi-pico/documents/RP-008276-DS-1-getting-started-with-pico.pdf?disposition=inline).
 
 #### Debugging
 ![openocd](docs/debug.png)
